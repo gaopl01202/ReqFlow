@@ -1,0 +1,13 @@
+[Unit]
+Description=ReqFlow
+After=network.target postgresql.service
+[Service]
+User=reqflow
+WorkingDirectory=/opt/reqflow/backend
+EnvironmentFile=/opt/reqflow/.env
+ExecStart=/opt/reqflow/.venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:8000 --workers 2 --access-logfile -
+Restart=on-failure
+NoNewPrivileges=true
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target

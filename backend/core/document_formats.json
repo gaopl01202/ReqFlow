@@ -1,0 +1,26 @@
+{
+  "version": "3.2.2",
+  "extensions": [
+    "bmp",
+    "csv",
+    "doc",
+    "docx",
+    "gif",
+    "jpeg",
+    "jpg",
+    "json",
+    "log",
+    "md",
+    "pdf",
+    "png",
+    "ppt",
+    "pptx",
+    "svg",
+    "txt",
+    "webp",
+    "xls",
+    "xlsx",
+    "xmind",
+    "xml"
+  ]
+}

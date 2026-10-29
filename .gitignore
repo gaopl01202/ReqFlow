@@ -1,0 +1,21 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+.env
+.local/
+frontend/dist/
+private_data/
+*.sqlite3
+.ruff_cache/
+.DS_Store
+*.pem
+*.key
+*.p12
+*.pfx
+tls/
+**/tls/
+
+# Generated from the locked Markdown editor package.
+frontend/public/vendor/vditor/

@@ -1,0 +1,17 @@
+{
+  "dictionary": {
+    "environment": {"development": "cyan", "testing": "gold", "production": "green"},
+    "severity": {"critical": "red", "major": "orange", "normal": "gold", "minor": "cyan"},
+    "source": {"internal": "cyan", "feedback": "purple", "other": "default"},
+    "priority": {"高": "red", "中": "blue", "低": "default"}
+  },
+  "names": {
+    "environment": {"开发": "cyan", "测试": "gold", "生产": "green", "预发": "purple", "集成": "geekblue"},
+    "severity": {"致命": "red", "阻塞": "red", "严重": "orange", "一般": "gold", "轻微": "cyan", "建议": "default"},
+    "source": {"内部": "cyan", "反馈": "purple", "其他": "default", "客户": "purple", "外部": "orange"},
+    "priority": {"紧急": "red", "最高": "red", "高": "red", "中": "blue", "普通": "blue", "低": "default"}
+  },
+  "dictionaryDefaults": {"environment": "cyan", "severity": "gold", "priority": "blue", "source": "purple"},
+  "workflowCodes": {"planned": "default", "new": "gold", "ready": "cyan", "active": "blue", "review": "purple", "done": "green", "closed": "green", "cancelled": "default", "rejected": "default"},
+  "workflowNames": {"阻塞": "red", "异常": "red", "暂停": "gold", "等待": "gold", "修复": "blue", "进行": "blue", "开发": "blue", "验收": "purple", "验证": "purple", "测试": "purple", "完成": "green", "关闭": "green", "取消": "default"}
+}

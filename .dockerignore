@@ -1,0 +1,17 @@
+.git
+.env
+.env.*
+.local
+.venv
+__pycache__
+*.py[cod]
+*.sqlite3
+private_data
+deploy/.env
+deploy/tls
+/tls
+frontend/node_modules
+frontend/.vite
+frontend/tests
+frontend/playwright-report
+frontend/test-results

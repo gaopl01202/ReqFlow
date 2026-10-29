@@ -65,11 +65,11 @@ npx playwright install chromium
 
 浏览器验收应在专用开发测试数据库运行，避免添加验收记录到日常使用数据。使用开发模式专用随机凭据（不用于生产）：在根目录运行 `python backend/manage.py seed_e2e`（使用虚拟环境并导出数据库环境变量）；启动前后端，再在 `frontend` 运行 `npm run test:e2e`。凭据、截图和追踪文件位于忽略的 `.local/` 中。
 
-业务来源见 [业务功能说明](业务功能说明.md)，部署与恢复见 [部署说明](docs/deployment.md)，本次验证记录见 [验收记录](docs/verification.md)。
+业务来源见 [业务功能说明](业务功能说明.md)，部署与恢复见 [部署说明](docs/deployment.md)，验证范围见 [验收说明](docs/verification.md)。
 
 ## 本次已启动的本地交付
 
-打开 http://127.0.0.1:5173，账号 `admin`，初始随机密码读取本机 `.local/initial-admin-password.txt`，首次登录必须改密。当前 `reqflow` 数据库不含验收项目；验收库与恢复核对结果见 docs/verification.md。该本地文件不会进入版本控制。
+打开 http://127.0.0.1:5173。若使用 `bootstrap --username admin --generate-local-password` 创建本地管理员，请从本机受保护的初始化凭据文件中读取密码并在首次登录时修改；该凭据文件不会进入版本控制。
 
 新建空开发环境时，可用 `bootstrap --username admin --generate-local-password` 代替交互初始化；该选项只允许 DEBUG 模式，拒绝覆盖现有初始密码文件。生产初始化继续使用交互方式。
 
@@ -89,7 +89,7 @@ npx playwright install chromium
 
 ## 长期使用模拟数据
 
-仅本地开发模式可执行`manage.py seed_demo --actor <系统管理员账号> --batch demo26`。默认生成24位随机姓名用户、11项目，每项目110需求/320任务/520缺陷/24文档，含历史迭代、合法流转、评论、图片和多附件。先备份；独立批次不覆盖原业务，随机凭据仅保存在受忽略的`.local/demo-data/<批次>/credentials.json`（0600）。续跑、校验及数据范围见[模拟数据说明](docs/demo-data.md)。
+`manage.py seed_demo` 仅允许本地开发模式执行，用于生成不覆盖现有记录的模拟数据；运行前应备份数据库及附件。随机凭据只写入本机受保护且被 Git 忽略的目录。命令参数、续跑与校验方式见[模拟数据说明](docs/demo-data.md)。
 
 
 登录默认连续7天未操作后失效，正常使用滚动续期，无固定最长登录限制；可用SESSION_IDLE_TIMEOUT_SECONDS配置（默认604800秒）。主动退出使当前会话失效，密码重置和账号停用使该账号全部会话失效。工作项详情链接形如`/p/PROJECT/task/123`，详情可复制分享；接收者仍须登录且有项目/菜单权限。旧查询式详情地址继续兼容；部署更新后旧会话需重新登录一次。会话与链接细则见docs/frontend.md中的UI-74。

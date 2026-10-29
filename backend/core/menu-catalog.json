@@ -1,0 +1,81 @@
+[
+  {
+    "title": "常用入口",
+    "items": [
+      {
+        "key": "home",
+        "label": "工作台"
+      },
+      {
+        "key": "projects",
+        "label": "项目管理"
+      }
+    ]
+  },
+  {
+    "title": "项目协作",
+    "items": [
+      {
+        "key": "items",
+        "label": "工作项"
+      },
+      {
+        "key": "iterations",
+        "label": "迭代规划"
+      },
+      {
+        "key": "documents",
+        "label": "项目文档"
+      },
+      {
+        "key": "reports",
+        "label": "统计报表"
+      },
+      {
+        "key": "members",
+        "label": "项目成员"
+      },
+      {
+        "key": "dictionaries",
+        "label": "字典管理"
+      },
+      {
+        "key": "workflow",
+        "label": "工作流配置"
+      },
+      {
+        "key": "recycle-bin",
+        "label": "回收站"
+      }
+    ]
+  },
+  {
+    "title": "系统管理",
+    "items": [
+      {
+        "key": "users",
+        "label": "用户管理"
+      },
+      {
+        "key": "user-groups",
+        "label": "用户组与权限"
+      },
+      {
+        "key": "positions",
+        "label": "职务管理"
+      },
+      {
+        "key": "priorities",
+        "label": "默认字典管理"
+      },
+      {
+        "key": "workflow-template",
+        "label": "默认工作流配置"
+      },
+      {
+        "key": "operation-logs",
+        "label": "运行日志"
+      }
+    ]
+  }
+]

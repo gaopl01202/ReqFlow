@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "purpose": "shared-runtime-material-attribution",
+  "scope": "Material identity and actual copied payloads; not a source-availability or release approval.",
+  "registrySha256": "bf128371e19f0d67e124ec8d3c8a76897f0e712a75d1cc1b893bd2e0126c8f5e",
+  "releaseApproval": false,
+  "materials": [
+    {
+      "path": "vendor/ppt/LICENSE",
+      "sha256": "fa3378d3e005fc6096e9da42d7fd53ea3a9742315560271369e0d958af2764f6",
+      "bytes": 5970,
+      "kind": "original-proprietary-runtime-notice",
+      "component": "@file-viewer/ppt",
+      "declaredLicense": "LicenseRef-Flyfish-Public-Watermarked-Binary-v2",
+      "source": "Retained original public watermarked runtime grant",
+      "runtimePaths": [
+        "vendor/ppt/frame-cache.mjs",
+        "vendor/ppt/index.mjs",
+        "vendor/ppt/manifest.json",
+        "vendor/ppt/package.json",
+        "vendor/ppt/ppt-font-cjk.otf",
+        "vendor/ppt/ppt-native.wasm",
+        "vendor/ppt/worker.mjs"
+      ]
+    },
+    {
+      "path": "vendor/ppt/NOTICE",
+      "sha256": "6b57bc92d0cb360a1aee691a3374ccf722037422cbbec8693607cce5859eb2d4",
+      "bytes": 10493,
+      "kind": "original-proprietary-runtime-notice",
+      "component": "@file-viewer/ppt",
+      "declaredLicense": "LicenseRef-Flyfish-Public-Watermarked-Binary-v2",
+      "source": "Retained original public watermarked runtime grant",
+      "runtimePaths": [
+        "vendor/ppt/frame-cache.mjs",
+        "vendor/ppt/index.mjs",
+        "vendor/ppt/manifest.json",
+        "vendor/ppt/package.json",
+        "vendor/ppt/ppt-font-cjk.otf",
+        "vendor/ppt/ppt-native.wasm",
+        "vendor/ppt/worker.mjs"
+      ]
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "vendor/ppt/frame-cache.mjs",
+      "bytes": 22038,
+      "sha256": "34fc0e7a5f328d52b55a7b616e45d7967555c6d3609e426b47f73f6d839ae411",
+      "sourceSha256": "34fc0e7a5f328d52b55a7b616e45d7967555c6d3609e426b47f73f6d839ae411",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/index.mjs",
+      "bytes": 38973,
+      "sha256": "a1f52bce577b57546ac9a2f9a96d2d21c65980605f5c2182af1092b07c99e126",
+      "sourceSha256": "a1f52bce577b57546ac9a2f9a96d2d21c65980605f5c2182af1092b07c99e126",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/manifest.json",
+      "bytes": 1656,
+      "sha256": "05193627f01227fc5fa45a15888f27288099dcd49e7b42ed92045225a5cc0dca",
+      "sourceSha256": "05193627f01227fc5fa45a15888f27288099dcd49e7b42ed92045225a5cc0dca",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/package.json",
+      "bytes": 1348,
+      "sha256": "dd62e3e3ea70f05f29ae2e84ba6eb3800a5942356f8330034ef967774e81a3fd",
+      "sourceSha256": "dd62e3e3ea70f05f29ae2e84ba6eb3800a5942356f8330034ef967774e81a3fd",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/ppt-font-cjk.otf",
+      "bytes": 16437364,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "sourceSha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/ppt-native.wasm",
+      "bytes": 1555542,
+      "sha256": "00adf3b25554cb44000c7213eb4a8f86086ecb211dfef5306f524c2f29248c5d",
+      "sourceSha256": "00adf3b25554cb44000c7213eb4a8f86086ecb211dfef5306f524c2f29248c5d",
+      "sourceTransform": "none"
+    },
+    {
+      "path": "vendor/ppt/worker.mjs",
+      "bytes": 58449,
+      "sha256": "559f91d2727b44532ca99c1fda188fa7eaa365a3437596abe4e1bb0961c39724",
+      "sourceSha256": "559f91d2727b44532ca99c1fda188fa7eaa365a3437596abe4e1bb0961c39724",
+      "sourceTransform": "none"
+    }
+  ]
+}
